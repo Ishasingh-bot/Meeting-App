@@ -4,6 +4,7 @@ import 'package:zoom_clone/resources/auth_methods.dart';
 import 'package:zoom_clone/screens/home_screen.dart';
 import 'package:zoom_clone/screens/login_screen.dart';
 import 'package:zoom_clone/utils/colors.dart';
+import 'package:jitsi_meet_wrapper/jitsi_meet_wrapper.dart';
 // Import the generated file
 import 'firebase_options.dart';
 
