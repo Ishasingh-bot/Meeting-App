@@ -1,8 +1,11 @@
+// ignore_for_file: unused_import
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:zoom_clone/resources/auth_methods.dart';
 import 'package:zoom_clone/screens/home_screen.dart';
 import 'package:zoom_clone/screens/login_screen.dart';
+import 'package:zoom_clone/screens/video_call_screen.dart';
 import 'package:zoom_clone/utils/colors.dart';
 import 'package:jitsi_meet_wrapper/jitsi_meet_wrapper.dart';
 // Import the generated file
@@ -29,6 +32,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const LoginScreen(),
         '/home': (context) => HomeScreen(),
+        '/video-call':(context) => const VideoCallScreen(), 
       },
       home: StreamBuilder(
           stream: AuthMethods().authChanges,

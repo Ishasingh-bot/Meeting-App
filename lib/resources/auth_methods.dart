@@ -44,6 +44,13 @@ class AuthMethods {
     }
     return res;
   }
+   void signOut() async {
+    try {
+      _auth.signOut();
+    } catch (e) {
+      print(e);
+    }
+  }
 }
 // await GoogleSignIn().signOut();
 // await FirebaseAuth.instance.signOut();
